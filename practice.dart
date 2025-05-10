@@ -450,4 +450,29 @@ void main() {
   // int b = 0;
   // int abc = a++ + b-- + --b - ++a;
   // print(abc);
+
+  // String? input = stdin.readLineSync();
+
+  // int number = int.tryParse(input ?? '') ?? 0;
+
+  // for (var i = 1; i <= 10; i++) {
+  //   if (i % 2 != 0) {
+  //     print("$number x $i = ${number * i}");
+  //   }
+  // }
+
+  while (true) {
+    stdout.write("Enter your email: ");
+    String? email = stdin.readLineSync();
+
+    stdout.write("Enter your password: ");
+    String? password = stdin.readLineSync();
+
+    if (email == "fkaaa567" && password == "1234") {
+      print("Login successful!");
+      break;
+    } else {
+      print("Invalid email or password. Please try again.");
+    }
+  }
 }
