@@ -1,110 +1,110 @@
 import 'dart:io';
 
 void main() {
-  // // Basic Variables & Types
-  // String productName = "iPhone";
-  // int price = 135000;
-  // double rating = 4.5;
-  // bool isAvailable = true;
+  // Basic Variables & Types
+  String productName = "iPhone";
+  int price = 135000;
+  double rating = 4.5;
+  bool isAvailable = true;
 
-  // print("$productName is of type ${productName.runtimeType}");
-  // print("$price is of type ${price.runtimeType}");
-  // print("$rating is of type ${rating.runtimeType}");
-  // print("$isAvailable is of type ${isAvailable.runtimeType}");
+  print("$productName is of type ${productName.runtimeType}");
+  print("$price is of type ${price.runtimeType}");
+  print("$rating is of type ${rating.runtimeType}");
+  print("$isAvailable is of type ${isAvailable.runtimeType}");
 
   // // Dynamic Variable
-  // dynamic value;
+  dynamic value;
 
-  // value = "Hello";
-  // print("Value: $value, Type: ${value.runtimeType}");
+  value = "Hello";
+  print("Value: $value, Type: ${value.runtimeType}");
 
-  // value = 123;
-  // print("Value: $value, Type: ${value.runtimeType}");
+  value = 123;
+  print("Value: $value, Type: ${value.runtimeType}");
 
   // // 1) List Task
 
-  // List<String> favoriteCars = [
-  //   "Toyota Corolla",
-  //   "Honda Civic",
-  //   "Suzuki Swift",
-  //   "Kia Sportage",
-  //   "Hyundai Elantra"
-  // ];
+  List<String> favoriteCars = [
+    "Toyota Corolla",
+    "Honda Civic",
+    "Suzuki Swift",
+    "Kia Sportage",
+    "Hyundai Elantra"
+  ];
 
-  // favoriteCars.add("MG HS");
+  favoriteCars.add("MG HS");
 
-  // print("My Favorite Cars:");
-  // for (String car in favoriteCars) {
-  //   print("- $car");
-  // }
+  print("My Favorite Cars:");
+  for (String car in favoriteCars) {
+    print("- $car");
+  }
 
   // // 2) List Task
 
-  // List<int> numbers = [5, 12, 8, 20, 3, 10];
+  List<int> numbers = [5, 12, 8, 20, 3, 10];
 
-  // int sum = numbers.reduce((a, b) => a + b);
+  int sum = numbers.reduce((a, b) => a + b);
 
-  // print("List: $numbers");
-  // print("Length: ${numbers.length}");
-  // print("First: ${numbers.first}");
-  // print("Last: ${numbers.last}");
-  // print("Sum: $sum");
+  print("List: $numbers");
+  print("Length: ${numbers.length}");
+  print("First: ${numbers.first}");
+  print("Last: ${numbers.last}");
+  print("Sum: $sum");
 
   // // 3 List Task
 
-  // List<String> names = ["Ali", "Ayesha", "Mohsin", "Sara", "Mustafa", "Tariq"];
+  List<String> names = ["Ali", "Ayesha", "Mohsin", "Sara", "Mustafa", "Tariq"];
 
-  // print("Names longer than 5 characters:");
-  // for (String name in names) {
-  //   if (name.length > 5) {
-  //     print(name);
-  //   }
-  // }
+  print("Names longer than 5 characters:");
+  for (String name in names) {
+    if (name.length > 5) {
+      print(name);
+    }
+  }
 
 //  1) Map Task
-  // Map<String, String> login = {'username': 'admin', 'password': 'admin1'};
+  Map<String, String> login = {'username': 'admin', 'password': 'admin1'};
 
-  // stdout.write("Enter username: ");
-  // String? enteredUsername = stdin.readLineSync();
+  stdout.write("Enter username: ");
+  String? enteredUsername = stdin.readLineSync();
 
-  // stdout.write("Enter password: ");
-  // String? enteredPassword = stdin.readLineSync();
+  stdout.write("Enter password: ");
+  String? enteredPassword = stdin.readLineSync();
 
-  // if (enteredUsername == login['username'] &&
-  //     enteredPassword == login['password']) {
-  //   print("Valid User");
-  // } else {
-  //   print("Invalid User");
-  // }
+  if (enteredUsername == login['username'] &&
+      enteredPassword == login['password']) {
+    print("Valid User");
+  } else {
+    print("Invalid User");
+  }
 
   // 2) Map Task
 
-  // Map<String, Map<String, dynamic>> movies = {
-  //   'Inception': {
-  //     'director': 'Christopher Nolan',
-  //     'year': 2010,
-  //     'ratings': [8.8, 9.0, 8.7, 9.1]
-  //   },
-  //   'Titanic': {
-  //     'director': 'James Cameron',
-  //     'year': 1997,
-  //     'ratings': [7.5, 8.0, 7.8, 7.9]
-  //   },
-  //   'The Godfather': {
-  //     'director': 'Francis Ford Coppola',
-  //     'year': 1972,
-  //     'ratings': [9.2, 9.5, 9.4, 9.3]
-  //   }
-  // };
+  Map<String, Map<String, dynamic>> movies = {
+    'Inception': {
+      'director': 'Christopher Nolan',
+      'year': 2010,
+      'ratings': [8.8, 9.0, 8.7, 9.1]
+    },
+    'Titanic': {
+      'director': 'James Cameron',
+      'year': 1997,
+      'ratings': [7.5, 8.0, 7.8, 7.9]
+    },
+    'The Godfather': {
+      'director': 'Francis Ford Coppola',
+      'year': 1972,
+      'ratings': [9.2, 9.5, 9.4, 9.3]
+    }
+  };
 
-  // movies.forEach((title, details) {
-  //   List<double> ratings = details['ratings'];
-  //   double avgRating = ratings.reduce((a, b) => a + b) / ratings.length;
-  //   if (avgRating >= 8.0) {
-  //     print(
-  //         "$title (Director: ${details['director']}, Year: ${details['year']}), Average Rating: ${avgRating.toStringAsFixed(2)}");
-  //   }
-  // });
+  movies.forEach((title, details) {
+    List<double> ratings = details['ratings'];
+    double avgRating = ratings.reduce((a, b) => a + b) / ratings.length;
+    if (avgRating >= 8.0) {
+      print(
+          "$title (Director: ${details['director']}, Year: ${details['year']}), Average Rating: ${avgRating.toStringAsFixed(2)}");
+    }
+  });
 
   //1) Loop Task
 
