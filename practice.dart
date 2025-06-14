@@ -461,18 +461,27 @@ void main() {
   //   }
   // }
 
-  while (true) {
-    stdout.write("Enter your email: ");
-    String? email = stdin.readLineSync();
+  // while (true) {
+  //   stdout.write("Enter your email: ");
+  //   String? email = stdin.readLineSync();
 
-    stdout.write("Enter your password: ");
-    String? password = stdin.readLineSync();
+  //   stdout.write("Enter your password: ");
+  //   String? password = stdin.readLineSync();
 
-    if (email == "fkaaa567" && password == "1234") {
-      print("Login successful!");
-      break;
-    } else {
-      print("Invalid email or password. Please try again.");
-    }
-  }
+  //   if (email == "fkaaa567" && password == "1234") {
+  //     print("Login successful!");
+  //     break;
+  //   } else {
+  //     print("Invalid email or password. Please try again.");
+  //   }
+  // }
+
+///////////// Function /////////////////
+
+  // greet() {
+  //   print("Hello");
+  //   return "hello";
+  // }
+
+  // print(greet().runtimeType);
 }
